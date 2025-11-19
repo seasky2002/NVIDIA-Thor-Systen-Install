@@ -8,6 +8,7 @@ I. 硬體準備:
   4. 鍵盤
   5. 空間大於16GB的隨身碟
   6. 一臺電腦
+
 II. 軟體準備:
   1. Jetson 官方鏡像檔:https://developer.nvidia.com/embedded/jetpack/downloads
   2. Etcher系統燒錄套件:https://etcher.balena.io/#download-etcher
