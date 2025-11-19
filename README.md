@@ -69,6 +69,7 @@ V. jetson-stats安裝:
      ```
      
      中間可能會有以下報錯:
+     ```bash
      error: externally-managed-environment
      x This environment is externally managed
      ╰─> To install Python packages system-wide, try apt install
@@ -82,14 +83,14 @@ V. jetson-stats安裝:
      it may be easiest to use pipx install xyz, which will manage a
      virtual environment for you. Make sure you have pipx installed.
      See /usr/share/doc/python3.12/README.venv for more information.
-
+     ```
      此時執行以下指令即可解決:
      ```bash
      sudo mv /usr/lib/python3.12/EXTERNALLY-MANAGED /usr/lib/python3.12/EXTERNALLY-MANAGED-back
      sudo pip3 install -U pip
      sudo pip3 install jetson-stats
      ```
-  2. 安裝完成後，啟用並重啟:
+  3. 安裝完成後，啟用並重啟:
      ```bash
      sudo systemctl restart jtop.service
      sudo reboot now
