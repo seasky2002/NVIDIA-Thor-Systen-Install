@@ -184,4 +184,6 @@ CSDN Jetson Thor刷機與安裝教學:[連結](https://blog.csdn.net/nenchoumi31
 知乎-設定CUDA的環境變量:[連結](https://zhuanlan.zhihu.com/p/1971245103956878390)
 
 魚香ROS-一鍵安裝ROS2:[連結](https://fishros.org.cn/forum/topic/20/%E5%B0%8F%E9%B1%BC%E7%9A%84%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E7%B3%BB%E5%88%97)
+
+ROS realsense SDK安裝: [連結](https://blog.csdn.net/gitblog_00540/article/details/151542427)
      
