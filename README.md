@@ -4,6 +4,7 @@ Nvidia AGX Thor安裝log
 **硬體規格:
 Jetson AGX Thor Developer Kit,
 Jetson T5000**
+
 **軟體規格:
 JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
 
@@ -68,6 +69,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
      source ~/.bashrc
      ```
      此時就可以去驗證cuda有沒有安裝成功了
+     
      <img width="671" height="153" alt="螢幕擷取畫面 2025-11-19 141310" src="https://github.com/user-attachments/assets/5c990015-4ebe-42ec-8fcb-7bd6cfba11ee" />
 
 ## V. jetson-stats安裝:
