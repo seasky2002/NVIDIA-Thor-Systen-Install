@@ -23,7 +23,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
 ## III. 安裝流程:
   1. 先在隨身碟上用Etcher燒錄官方鏡像檔，燒錄好之後插到Jetson的USB端口，並接上HDMI線、鍵盤，供電可以直接插Jetson的兩個type-C插口其中一個
   2. 開啟電源後，理論上會進入GNU GRUB的畫面，此時點選第一個"Jetson Thor options"
-     <img width="1338" height="832" alt="Jetson 1" src="https://github.com/user-attachments/assets/5bb261a0-71f8-44a8-914b-5f14f15d73d8" />(圖片來源:CSDN)
+     <img width="640" height="480" alt="Jetson 1" src="https://github.com/user-attachments/assets/5bb261a0-71f8-44a8-914b-5f14f15d73d8" />(圖片來源:CSDN)
      
      如果沒有成功，而是進去以下畫面:
      ![Jetson2](https://github.com/user-attachments/assets/d136985f-4f22-4dfb-a6b7-786732ab7c3d)
