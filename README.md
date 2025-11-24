@@ -162,7 +162,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
 
   ROS依賴則是用以下的指令下載:
   ```bash
-     sudo apt install ros-jazzy-realsense2-*
+     sudo apt install ros-jazzy-realsense2-* #這裡用jazzy是因為我的ROS2是載這個版本，目前官方SDK支援jazzy和kilted
    ```
   然後，安裝[realsense-ros包](https://github.com/realsenseai/realsense-ros?tab=readme-ov-file#installation-on-ubuntu)後，建置即可運行
   
