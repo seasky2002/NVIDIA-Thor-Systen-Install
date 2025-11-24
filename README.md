@@ -186,11 +186,11 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
   點選右邊的齒輪，進入IPv4設定位置。
   VLP-16 需要的ip是 192.168.1.X的格式，因此將其改成以下的樣子:
 
-  ![108994](https://github.com/user-attachments/assets/73f8e079-82dd-4f13-b0c2-dbd6981b6687)
+  <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/73f8e079-82dd-4f13-b0c2-dbd6981b6687" />
 
   修改好後，在瀏覽器輸入192.168.1.201，檢查有沒有進去Velodyne的參數設定頁面
-  
-  ![108995](https://github.com/user-attachments/assets/58c959e4-a80e-4665-a069-e3ae0830074b)
+
+  <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/58c959e4-a80e-4665-a069-e3ae0830074b" />
 
   如果有，此時就能在ROS上運行了。
   ```bash
