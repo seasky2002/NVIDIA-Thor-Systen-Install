@@ -1,11 +1,17 @@
 # NVIDIA-Thor-System-Install
 Nvidia AGX Thor安裝log
 
+**硬體規格:
+Jetson AGX Thor Developer Kit,
+Jetson T5000**
+**軟體規格:
+JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
+
 ## I. 硬體準備:
   1. **NVIDIA AGX Thor本體**
   2. **官方提供的變壓器(type-C頭)**
   3. **HDMI傳輸線(以方便在螢幕上操作)**
-  4. **鍵盤**
+  4. **外接鍵盤**
   5. **空間大於16GB的隨身碟(系統碟)**
   6. **一臺電腦(用來灌系統碟)**
 
@@ -119,11 +125,8 @@ Nvidia AGX Thor安裝log
      ```
      <img width="1097" height="530" alt="image" src="https://github.com/user-attachments/assets/6404bbd8-3ad9-44c6-9a93-55e0c784f579" />
 
-## VI. openCV with CUDA安裝:
-  待補充
-
-## VII. 已知問題:
-  1. 在nvidia-smi會顯示Memory Usage: Not Supported，這是它讀不到的問題，實際在運行時，GPU還是會分配記憶體(用torch測試的結果)
+## VI. 已知問題:
+  1. 在nvidia-smi會顯示Memory Usage: Not Supported，這是它讀不到的問題，實際在運行時，GPU還是會分配記憶體(經過pytorch測試)
   2. jetson_release會顯示抓不到jetpack，但實際是有的
 
 參考來源:
