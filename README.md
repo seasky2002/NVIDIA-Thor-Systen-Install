@@ -113,19 +113,19 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
      ```bash
      jtop
      ```
-     <img width="2139" height="1157" alt="image" src="https://github.com/user-attachments/assets/154bf7ac-25ca-42a2-9865-41cf084e1ceb" />
+     <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/154bf7ac-25ca-42a2-9865-41cf084e1ceb" />
 
      查看CUDA與openCV版本
      ```bash
      jetson_release
      ```
-     <img width="780" height="557" alt="image" src="https://github.com/user-attachments/assets/b657e9a0-49de-4fea-9687-62f35db7b09e" />
+     <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/b657e9a0-49de-4fea-9687-62f35db7b09e" />
 
      查看Nvidia Driver版本
      ```bash
      nvidia-smi
      ```
-     <img width="1097" height="530" alt="image" src="https://github.com/user-attachments/assets/6404bbd8-3ad9-44c6-9a93-55e0c784f579" />
+     <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/6404bbd8-3ad9-44c6-9a93-55e0c784f579" />
 ## VI. ROS2 安裝:
   使用小魚的一鍵安裝ROS功能:
    ```bash
@@ -158,7 +158,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
      realsense-viewer
    ```
 
-  <img width="2151" height="1165" alt="螢幕擷取畫面 2025-11-24 103644" src="https://github.com/user-attachments/assets/8872114f-7133-4c41-b83f-8354beca3982" />
+  <img width="640" height="480" alt="螢幕擷取畫面 2025-11-24 103644" src="https://github.com/user-attachments/assets/8872114f-7133-4c41-b83f-8354beca3982" />
 
   ROS依賴則是用以下的指令下載:
   ```bash
@@ -166,7 +166,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
    ```
   然後，安裝[realsense-ros包](https://github.com/realsenseai/realsense-ros?tab=readme-ov-file#installation-on-ubuntu)後，建置即可運行
   
-  <img width="2016" height="812" alt="image" src="https://github.com/user-attachments/assets/d63dc10a-433d-4bae-a8f1-d1dbcdebd4be" />
+  <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/d63dc10a-433d-4bae-a8f1-d1dbcdebd4be" />
 
 
 ## VII. VLP-16(Velodyne Lidar Driver)安裝:
@@ -201,7 +201,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
     rviz2 rviz
   ```
   
-  <img width="2142" height="1160" alt="image" src="https://github.com/user-attachments/assets/9376f13e-9d95-45b1-9fe5-acb673597cbf" />
+  <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/9376f13e-9d95-45b1-9fe5-acb673597cbf" />
 
 ## VIII. 已知問題:
   1. 在nvidia-smi會顯示Memory Usage: Not Supported，這只是因為它讀不到記憶體狀態，實際在運行時，GPU還是會分配記憶體(經過pytorch測試)
