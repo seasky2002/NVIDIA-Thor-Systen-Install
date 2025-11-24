@@ -175,7 +175,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
 
 
 
-##參考來源:
+## 參考來源:
 
 NVIDIA Jetpack:[連結](https://docs.nvidia.com/jetson/agx-thor-devkit/user-guide/latest/setup_cuda.html#option-2-jetpack-apt-repo)
 
