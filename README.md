@@ -13,13 +13,14 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
 ## 📚 目錄
 * [I. 硬體準備](#i-硬體準備)
 * [II. 軟體準備](#ii-軟體準備)
-* [II. 系統安裝流程](#iii-安裝流程)
-* [IV. Jetpack & CUDA 安裝](#iii-jetpack--cuda-安裝)
-* [IV. jetson-stats 監控套件安裝](#iv-jetson-stats-監控套件安裝)
-* [V. ROS2 安裝](#v-ros2-安裝)
-* [VI. Realsense SDK 安裝](#vi-realsense-sdk-安裝)
-* [VII. VLP-16 (Velodyne Lidar Driver) 安裝](#vii-vlp-16-velodyne-lidar-driver-安裝)
-* [VIII. 已知問題與解決方案](#viii-已知問題與解決方案)
+* [II. 系統安裝](#iii-安裝流程)
+* [IV. Jetpack & CUDA 安裝](#iv-jetpackcuda安裝)
+* [V. jetson-stats 監控套件安裝](#v-jetson-stats安裝)
+* [VI. ROS2 安裝](#vi-ros2安裝)
+* [VII. Realsense SDK 安裝](#vi-realsense-sdk安裝)
+* [VIII. VLP-16 (Velodyne Lidar Driver) 安裝](#vii-vlp-16-velodyne-lidar-driver安裝)
+* [IX. 已知問題與解決方案](#viii-已知問題與解決方案)
+* [參考資料](#參考資料)
 
 ---
 
@@ -184,7 +185,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
   <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/d63dc10a-433d-4bae-a8f1-d1dbcdebd4be" />
 
 
-## VII. VLP-16(Velodyne Lidar Driver)安裝:
+## VIII. VLP-16(Velodyne Lidar Driver)安裝:
   在終端機先運行以下指令，安裝velodyne的依賴:
   ```bash
      sudo apt-get install ros-jazzy-velodyne #這裡用jazzy是因為我的ROS2是載這個版本，目前官方支援jazzy和rolling
@@ -218,7 +219,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
   
   <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/9376f13e-9d95-45b1-9fe5-acb673597cbf" />
 
-## VIII. 已知問題:
+## IX. 已知問題:
   1. 在nvidia-smi會顯示Memory Usage: Not Supported，這只是因為它讀不到記憶體狀態，實際在運行時，GPU還是會分配記憶體(經過pytorch測試)
   2. jetson_release會顯示抓不到jetpack，但實際已經在裡面了
   3. RealSense SDK沒辦法讀取到d435i的相機，目前推測是Jetpack 6以上的版本把IMU的依賴給移除了[連結](https://github.com/realsenseai/librealsense/issues/14169)
