@@ -142,7 +142,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
      nvidia-smi
      ```
      <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/6404bbd8-3ad9-44c6-9a93-55e0c784f579" />
-## VI. ROS2 安裝:
+## VI. ROS2安裝:
   使用小魚的一鍵安裝ROS功能:
    ```bash
      wget http://fishros.com/install -O fishros && . fishros
