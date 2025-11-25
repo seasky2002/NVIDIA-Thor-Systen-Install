@@ -50,6 +50,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
      <img width="640" height="480" alt="Jetson 4" src="https://github.com/user-attachments/assets/30c9d426-1df6-4105-97b5-f716ea5cf8ab" />(圖片來源:CSDN)
      
   4. 進入之後，點選第一個"Flash Jetson AGX Thor Developer Kit on NVMe 0.2.0-r38.2"，這代表將系統燒錄到硬體裡(第二個選項就是將系統燒到USB內)
+     
      <img width="640" height="480" alt="Jetson 5" src="https://github.com/user-attachments/assets/0843ff56-f922-45b1-833c-142565de754e" />(圖片來源:CSDN)
      
   6. 點選之後，等待15分鐘直至安裝成功，此時它會自動重啟，等待Update Progress跑完即可。
@@ -61,11 +62,11 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
      sudo apt update
      sudo apt install nvidia-jetpack
      ```
-     此時它會安裝Jetpack的完整包，大概會耗掉15G的空間
+     此時它會安裝Jetpack的完整包，約需15GB的空間
      下面是關於Jetpack的架構圖:
      <img width="640" height="480" alt="jetpack-metapackage" src="https://github.com/user-attachments/assets/f490f848-af36-42fd-a326-0b64973392b8" />(圖片來源:NVIDIA)
      
-     基本上在安裝這個的同時也會安裝好CUDA
+     註：安裝nvidia-jetpack的同時，也會自動安裝CUDA
   3. 安裝好nvidia-jetpack後，要記得去設定CUDA的環境變量
      首先先執行以下程式:
      ```bash
@@ -120,7 +121,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
      sudo pip3 install -U pip
      sudo pip3 install jetson-stats
      ```
-  3. 安裝完成後，啟用並重啟:
+  3. 安裝完成後，啟用服務並重新開機:
      ```bash
      sudo systemctl restart jtop.service
      sudo reboot now
@@ -148,9 +149,10 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
      wget http://fishros.com/install -O fishros && . fishros
    ```
   而後照著上面進行操作，目前Ubuntu24.04支援以下三種版本:
-    1. Jazzy
+    1. Jazzy(推薦)
     2. Kilted
     3. Rolling
+    
   安裝完成後，可以開新的終端驗證:
   
   <img width="461" height="79" alt="image" src="https://github.com/user-attachments/assets/ad295a88-dac1-4324-912f-e5e5241057e0" />
@@ -208,7 +210,7 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
 
   <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/58c959e4-a80e-4665-a069-e3ae0830074b" />
 
-  如果有，此時就能在ROS上運行了。
+  如果連接成功，此時就能在ROS上運行了。
   ```bash
     ros2 launch velodyne velodyne-all-nodes-VLP16-launch.py
   ```
@@ -220,9 +222,9 @@ JetPack 7.0 with Jetson Linux 38.2(Ubuntu 24.04 LTS　＆　Kernel v6.8 LTS)**
   <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/9376f13e-9d95-45b1-9fe5-acb673597cbf" />
 
 ## IX. 已知問題:
-  1. 在nvidia-smi會顯示Memory Usage: Not Supported，這只是因為它讀不到記憶體狀態，實際在運行時，GPU還是會分配記憶體(經過pytorch測試)
-  2. jetson_release會顯示抓不到jetpack，但實際已經在裡面了
-  3. RealSense SDK沒辦法讀取到d435i的相機，目前推測是Jetpack 6以上的版本把IMU的依賴給移除了[連結](https://github.com/realsenseai/librealsense/issues/14169)
+  1. 在nvidia-smi會顯示Memory Usage: Not Supported，僅是它讀不到記憶體狀態，實際在運行時，GPU還是會分配記憶體(經過pytorch測試確認)
+  2. jetson_release會顯示抓不到jetpack，但實際已經安裝在系統中
+  3. RealSense SDK沒辦法讀取到d435i的相機，目前推測是Jetpack 6.0以上的版本可能移除了IMU的相關依賴[連結](https://github.com/realsenseai/librealsense/issues/14169)
 
   ![messageImage_1763970783422](https://github.com/user-attachments/assets/6d7cbced-51c0-49a0-8586-e2c238337556)
 
